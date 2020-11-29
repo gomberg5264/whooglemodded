@@ -329,7 +329,3 @@ def run_app():
 
     os.environ['HTTPS_ONLY'] = '1' if args.https_only else ''
 
-    if args.debug:
-        app.run(host=args.host, port=args.port, debug=args.debug)
-    else:
-        waitress.serve(app, listen="{}:{}".format(args.host, args.port))
