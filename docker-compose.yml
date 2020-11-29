@@ -16,3 +16,4 @@ services:
     ports:
       - 5000:5000
     restart: unless-stopped
+--build-arg use_https=1
