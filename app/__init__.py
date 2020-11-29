@@ -38,9 +38,3 @@ Session(app)
 # Attempt to acquire tor identity, to determine if Tor config is available
 send_tor_signal(Signal.HEARTBEAT)
 
-from app import routes
-from flask import Flask
-from flask_talisman import Talisman
-
-app = Flask(__name__)
-Talisman(app)
